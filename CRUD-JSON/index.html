@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Crud-json</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span>CADASTRO DE VEÍCULOS</span>
+            <button onclick="abrir_modal()" id="novo"> <strong>+</strong> Novo Registro</i></button>
+        </div>
+
+        <div id="div-tabela">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Marca</th>
+                        <th>Modelo</th>
+                        <th>Placa</th>
+                        <th>Ano</th>
+                        <th>Renavam</th>
+                        <th class="acao">Editar</th>
+                        <th class="acao">Excluir</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div class="modal-container">
+            <div class="modal">
+                <form>
+                    <label for="m-marca">Marca</label>
+                    <input id="m-marca" type="text" required>
+
+                    <label for="m-modelo">Modelo</label>
+                    <input id="m-modelo" type="text">
+
+                    <label for="m-placa">Placa</label>
+                    <input id="m-placa" type="text">
+
+                    <label for="m-ano">Ano</label>
+                    <input id="m-ano" type="text">
+
+                    <label for="m-renavam">Renavam</label>
+                    <input id="m-renavam" type="text">
+                   <button id="save">Salvar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
